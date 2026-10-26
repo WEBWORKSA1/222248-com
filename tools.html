@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Free Startup Calculators: Cost, Break-Even, Website Revenue, 48-Hour Week | 222248"
+description: "Free calculators for founders: startup cost, break-even, website revenue (ads, affiliates, leads), 48-hour working week and a business name generator."
+---
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "222248 Launch Calculators", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Free calculators</span><h1>Launch Calculators</h1>
+<p class="lead">Five tools founders use before spending money. Results update as you type. Nothing you enter leaves your browser.</p></div></section>
+<section><div class="wrap">
+<div class="tool-tabs" role="tablist">
+<button class="on" data-tool="t-cost">Startup cost</button><button data-tool="t-break">Break-even</button><button data-tool="t-ads">Website revenue</button><button data-tool="t-hours">48-hour week</button><button data-tool="t-names">Name generator</button></div>
+
+<div class="tool on" id="t-cost"><div class="form-card"><h2 style="font-size:1.4rem">Startup cost calculator</h2><p style="margin-bottom:16px">Estimate what your launch costs in cash, including monthly runway.</p>
+<div class="row"><div class="field"><label for="c-domain">Domain ($)</label><input type="number" id="c-domain" value="15" min="0" step="1" inputmode="decimal"></div><div class="field"><label for="c-design">Design &amp; assets ($ one-off)</label><input type="number" id="c-design" value="0" min="0" step="1" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="c-legal">Legal &amp; registration ($ one-off)</label><input type="number" id="c-legal" value="100" min="0" step="1" inputmode="decimal"></div><div class="field"><label for="c-host">Hosting ($/mo)</label><input type="number" id="c-host" value="0" min="0" step="1" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="c-tools">Software tools ($/mo)</label><input type="number" id="c-tools" value="30" min="0" step="1" inputmode="decimal"></div><div class="field"><label for="c-ai">AI subscriptions ($/mo)</label><input type="number" id="c-ai" value="20" min="0" step="1" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="c-ads">Paid marketing ($/mo)</label><input type="number" id="c-ads" value="0" min="0" step="1" inputmode="decimal"></div><div class="field"><label for="c-runway">Runway (months)</label><input type="number" id="c-runway" value="6" min="0" step="1" inputmode="decimal"></div></div></div>
+<div class="result"><span class="eyebrow">Total cash needed</span><div class="big" id="cost-total">$0</div><p id="cost-note" style="margin-top:8px"></p>
+<table><tr><td>One-off costs</td><td id="cost-oneoff"></td></tr><tr><td>Monthly costs</td><td id="cost-monthly"></td></tr><tr><td>Runway costs</td><td id="cost-runway"></td></tr></table>
+<p class="notice"><b>Formula:</b> one-off + (monthly × runway months). Free static hosting and free tiers can bring monthly costs close to zero.</p></div></div>
+
+<div class="tool" id="t-break"><div class="form-card"><h2 style="font-size:1.4rem">Break-even calculator</h2><p style="margin-bottom:16px">How many sales per month cover your fixed costs?</p>
+<div class="field"><label for="b-fixed">Monthly fixed costs ($)</label><input type="number" id="b-fixed" value="500" min="0" step="1" inputmode="decimal"></div><div class="field"><label for="b-price">Price per sale ($)</label><input type="number" id="b-price" value="49" min="0" step="0.01" inputmode="decimal"></div><div class="field"><label for="b-var">Variable cost per sale ($ fees, delivery)</label><input type="number" id="b-var" value="5" min="0" step="0.01" inputmode="decimal"></div></div>
+<div class="result"><span class="eyebrow">Break-even sales / month</span><div class="big" id="be-units">0</div>
+<table><tr><td>Break-even revenue</td><td id="be-rev"></td></tr><tr><td>Contribution margin</td><td id="be-margin"></td></tr><tr><td>Sales needed per day</td><td id="be-day"></td></tr></table>
+<p class="notice"><b>Formula:</b> fixed costs ÷ (price − variable cost). If you need many sales a day to break even, raise the price or cut costs.</p></div></div>
+
+<div class="tool" id="t-ads"><div class="form-card"><h2 style="font-size:1.4rem">Website revenue estimator</h2><p style="margin-bottom:16px">Combine display ads, affiliates and leads. Use conservative inputs.</p>
+<div class="row"><div class="field"><label for="a-views">Monthly page views</label><input type="number" id="a-views" value="50000" min="0" step="1" inputmode="decimal"></div><div class="field"><label for="a-rpm">Ad RPM ($ per 1,000 views)</label><input type="number" id="a-rpm" value="8" min="0" step="0.1" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="a-aff">Affiliate click rate (% of views)</label><input type="number" id="a-aff" value="1" min="0" step="0.1" inputmode="decimal"></div><div class="field"><label for="a-epc">Earnings per click ($)</label><input type="number" id="a-epc" value="0.40" min="0" step="0.01" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="a-leads">Qualified leads / month</label><input type="number" id="a-leads" value="10" min="0" step="1" inputmode="decimal"></div><div class="field"><label for="a-lv">Value per lead ($)</label><input type="number" id="a-lv" value="40" min="0" step="1" inputmode="decimal"></div></div></div>
+<div class="result"><span class="eyebrow">Estimated monthly revenue</span><div class="big" id="ad-total">$0</div><div class="bar"><i id="ad-bar"></i></div>
+<table><tr><td>Display ads</td><td id="ad-ads"></td></tr><tr><td>Affiliates</td><td id="ad-aff"></td></tr><tr><td>Leads</td><td id="ad-leads"></td></tr><tr><td>Annualized</td><td id="ad-year"></td></tr></table>
+<p class="notice">RPM varies widely by topic, audience country and season. This is a planning estimate, not a guarantee of earnings.</p></div></div>
+
+<div class="tool" id="t-hours"><div class="form-card"><h2 style="font-size:1.4rem">48-hour working week calculator</h2><p style="margin-bottom:16px">Enter this week's hours and your reference period to see your rolling average.</p>
+<div class="row"><div class="field"><label for="h-mon">Monday (h)</label><input type="number" id="h-mon" value="9" min="0" step="0.25" inputmode="decimal"></div><div class="field"><label for="h-tue">Tuesday (h)</label><input type="number" id="h-tue" value="9" min="0" step="0.25" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="h-wed">Wednesday (h)</label><input type="number" id="h-wed" value="9" min="0" step="0.25" inputmode="decimal"></div><div class="field"><label for="h-thu">Thursday (h)</label><input type="number" id="h-thu" value="9" min="0" step="0.25" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="h-fri">Friday (h)</label><input type="number" id="h-fri" value="9" min="0" step="0.25" inputmode="decimal"></div><div class="field"><label for="h-sat">Saturday (h)</label><input type="number" id="h-sat" value="4" min="0" step="0.25" inputmode="decimal"></div></div>
+<div class="row"><div class="field"><label for="h-sun">Sunday (h)</label><input type="number" id="h-sun" value="0" min="0" step="0.25" inputmode="decimal"></div><div class="field"><label for="h-weeks">Weeks in reference period so far</label><input type="number" id="h-weeks" value="4" min="0" step="1" inputmode="decimal"></div></div>
+<div class="field"><label for="h-avg">Average of previous weeks (h)</label><input type="number" id="h-avg" value="46" min="0" step="0.1" inputmode="decimal"></div></div>
+<div class="result"><span class="eyebrow">Rolling weekly average</span><div class="big" id="hr-roll">0 h</div><div class="bar"><i id="hr-bar"></i></div>
+<table><tr><td>This week</td><td id="hr-week"></td></tr></table><p id="hr-status" style="margin-top:12px;font-weight:700"></p>
+<p class="notice">General information only. Limits, reference periods and opt-outs vary by jurisdiction. <a href="/guides/48-hour-work-week-rule-explained.html">Read the guide</a>.</p></div></div>
+
+<div class="tool" id="t-names"><div class="form-card"><h2 style="font-size:1.4rem">Business name generator</h2><p style="margin-bottom:16px">Enter one keyword. Click a name to copy it, then check availability and trademarks.</p>
+<div class="field"><label for="n-kw">Keyword</label><input id="n-kw" value="launch" maxlength="20"></div><button class="btn btn-primary" id="n-go" type="button">Generate names</button></div>
+<div class="result"><span class="eyebrow">Ideas</span><div class="names" id="n-out"></div><p class="notice">Names are random combinations. Always search trademark databases before using one. <a href="/guides/domain-names-for-startups.html">Domain checklist</a>.</p></div></div>
+</div></section>
+
+<section class="section-alt"><div class="wrap">
+<span class="eyebrow">AI launch stack</span><h2>Tools by job, not by hype</h2><p class="lead">We list categories rather than chase every new release. Want your tool featured? Submit it below — featured placements are clearly labeled.</p>
+<div class="grid g4" style="margin-top:24px">
+<div class="card"><span class="tag">Research</span><h3 style="margin-top:10px">AI assistant</h3><p>Summarize reviews, cluster pain points, draft interview scripts.</p></div>
+<div class="card"><span class="tag">Build</span><h3 style="margin-top:10px">AI code editor</h3><p>Scaffold pages and scripts; explain errors as you go.</p></div>
+<div class="card"><span class="tag">Design</span><h3 style="margin-top:10px">Image generator</h3><p>Hero visuals, icons and mock-ups from a short brief.</p></div>
+<div class="card"><span class="tag">Grow</span><h3 style="margin-top:10px">Writing assistant</h3><p>Headlines, emails and posts in several tones to test.</p></div>
+</div>
+<div class="form-card" style="margin-top:28px;max-width:760px"><h3>Submit an AI tool</h3>
+<form class="js-form" data-subject="AI tool submission" data-ok="Thanks — we review submissions weekly.">
+<div class="row"><div class="field"><label for="ts-name">Tool name</label><input id="ts-name" name="tool" required></div><div class="field"><label for="ts-url">Website URL</label><input id="ts-url" name="url" type="url" required placeholder="https://"></div></div>
+<div class="row"><div class="field"><label for="ts-cat">Category</label><select id="ts-cat" name="category"><option>Research</option><option>Build</option><option>Design</option><option>Marketing</option><option>Operations</option></select></div><div class="field"><label for="ts-email">Your email</label><input id="ts-email" name="email" type="email" required></div></div>
+<div class="field"><label class="check"><input type="checkbox" name="featured" value="Interested in a paid featured placement"> <span>I'm interested in a paid featured placement</span></label></div><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="field"><label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree to be contacted about my request and accept the <a href="/privacy.html">Privacy Policy</a>.</span></label></div>
+<button class="btn btn-primary" type="submit">Submit tool</button><div class="form-msg" role="status"></div></form></div>
+</div></section>
